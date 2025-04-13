@@ -1,23 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodigy Club UK</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <div class="page-wrapper">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="logo">PRODIGY CLUB</div>
+        <nav class="main-nav">
+          <div class="nav-section">
+            <div class="nav-header">Account</div>
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-header">Announcements</div>
+            <a href="announcements.html"
+              ><i class="fas fa-bullhorn"></i> View All</a
+            >
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-header">Opportunities</div>
+            <a href="work-experience.html"
+              ><i class="fas fa-briefcase"></i> Work Experience</a
+            >
+            <a href="apprenticeships.html"
+              ><i class="fas fa-graduation-cap"></i> Apprenticeships</a
+            >
+            <a href="programmes.html"
+              ><i class="fas fa-project-diagram"></i> Programmes</a
+            >
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-header">Resources</div>
+            <a href="advice.html"><i class="fas fa-comments"></i> Advice</a>
+            <a href="notes.html"><i class="fas fa-sticky-note"></i> Notes</a>
+            <a href="experiences.html"
+              ><i class="fas fa-book-open"></i> Experiences</a
+            >
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-header">Services</div>
+            <a href="tutoring.html"
+              ><i class="fas fa-chalkboard-teacher"></i> Tutoring</a
+            >
+            <a href="consultation.html"
+              ><i class="fas fa-handshake"></i> Consultation</a
+            >
+            <a href="networking.html"
+              ><i class="fas fa-network-wired"></i> Networking</a
+            >
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content-area">
+        <div class="dynamic-grid">
+          <!-- Grid Item 1 -->
+          <a href="members.html" class="grid-item">
+            <div
+              class="item-bg"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+              "
+            ></div>
+            <div class="item-content">
+              <h3>Student Network</h3>
+              <p>Connect with ambitious peers</p>
+              <span class="cta-link">Explore →</span>
+            </div>
+          </a>
+
+          <!-- Grid Item 2 -->
+          <a href="opportunities.html" class="grid-item">
+            <div
+              class="item-bg"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+              "
+            ></div>
+            <div class="item-content">
+              <h3>Opportunities</h3>
+              <p>Exclusive programs</p>
+              <span class="cta-link">Discover →</span>
+            </div>
+          </a>
+
+          <!-- Grid Item 3 -->
+          <a href="publications.html" class="grid-item">
+            <div
+              class="item-bg"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+              "
+            ></div>
+            <div class="item-content">
+              <h3>Publications</h3>
+              <p>Showcase your work</p>
+              <span class="cta-link">View →</span>
+            </div>
+          </a>
+
+          <!-- Grid Item 4 -->
+          <a href="events.html" class="grid-item">
+            <div
+              class="item-bg"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+              "
+            ></div>
+            <div class="item-content">
+              <h3>Events</h3>
+              <p>Networking opportunities</p>
+              <span class="cta-link">See All →</span>
+            </div>
+          </a>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
